@@ -1,0 +1,214 @@
+{
+  "porteros": [
+    {
+      "id": 1,
+      "nombre": "Marc-André ter Stegen",
+      "dorsal": 1,
+      "posicion": "Portero"
+    },
+    {
+      "id": 2,
+      "nombre": "Iñaki Peña",
+      "dorsal": 26,
+      "posicion": "Portero"
+    },
+    {
+      "nombre": "Onana",
+      "dorsal": "88",
+      "posicion": "G",
+      "id": 3
+    },
+    {
+      "nombre": "Neuer",
+      "dorsal": "77",
+      "posicion": "Portero",
+      "id": 4
+    }
+  ],
+  "defensas": [
+    {
+      "id": 1,
+      "nombre": "Héctor Bellerín",
+      "dorsal": 2,
+      "posicion": "Defensa"
+    },
+    {
+      "id": 2,
+      "nombre": "Gerard Piqué",
+      "dorsal": 3,
+      "posicion": "Defensa"
+    },
+    {
+      "id": 3,
+      "nombre": "Ronald Araujo",
+      "dorsal": 4,
+      "posicion": "Defensa"
+    },
+    {
+      "id": 4,
+      "nombre": "Andreas Christensen",
+      "dorsal": 15,
+      "posicion": "Defensa"
+    },
+    {
+      "id": 5,
+      "nombre": "Marcos Alonso",
+      "dorsal": 17,
+      "posicion": "Defensa"
+    },
+    {
+      "id": 6,
+      "nombre": "Jordi Alba",
+      "dorsal": 18,
+      "posicion": "Defensa"
+    },
+    {
+      "id": 7,
+      "nombre": "Jules Kounde",
+      "dorsal": 23,
+      "posicion": "Defensa"
+    },
+    {
+      "id": 8,
+      "nombre": "Eric Garcia",
+      "dorsal": 24,
+      "posicion": "Defensa"
+    },
+    {
+      "nombre": "Koulibaly",
+      "dorsal": "44",
+      "posicion": "Defensor",
+      "id": 9
+    }
+  ],
+  "centrocampistas": [
+    {
+      "id": 1,
+      "nombre": "Sergio Busquets",
+      "dorsal": 5,
+      "posicion": "Centrocampista"
+    },
+    {
+      "id": 2,
+      "nombre": "Pedri",
+      "dorsal": 8,
+      "posicion": "Centrocampista"
+    },
+    {
+      "id": 3,
+      "nombre": "Franck Kessie",
+      "dorsal": 19,
+      "posicion": "Centrocampista"
+    },
+    {
+      "id": 4,
+      "nombre": "Sergi Roberto",
+      "dorsal": 20,
+      "posicion": "Centrocampista"
+    },
+    {
+      "id": 5,
+      "nombre": "Frenkie de Jong",
+      "dorsal": 21,
+      "posicion": "Centrocampista"
+    },
+    {
+      "id": 6,
+      "nombre": "Gavi",
+      "dorsal": 30,
+      "posicion": "Centrocampista"
+    },
+    {
+      "nombre": "Kimmich",
+      "dorsal": "29",
+      "posicion": "Mediocampo",
+      "id": 7
+    }
+  ],
+  "delanteros": [
+    {
+      "nombre": "Dembélé",
+      "dorsal": "7",
+      "posicion": "Atacante",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Robert Lewandowski",
+      "dorsal": 9,
+      "posicion": "Atacante"
+    },
+    {
+      "id": 3,
+      "nombre": "Ansu Fati",
+      "dorsal": 10,
+      "posicion": "Atacante"
+    },
+    {
+      "id": 4,
+      "nombre": "Ferran Torres",
+      "dorsal": 11,
+      "posicion": "Atacante"
+    },
+    {
+      "id": 5,
+      "nombre": "Memphis Depay",
+      "dorsal": 14,
+      "posicion": "Atacante"
+    },
+    {
+      "id": 6,
+      "nombre": "Raphina",
+      "dorsal": 22,
+      "posicion": "Atacante"
+    },
+    {
+      "nombre": "Haaland",
+      "dorsal": "29",
+      "posicion": "Goleador",
+      "id": 7
+    }
+  ],
+  "cuerpoTecnico": [
+    {
+      "nombre": "Xavi",
+      "cargo": "Entrenador",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Òscar Hernández",
+      "cargo": "Entrenador Asistente"
+    },
+    {
+      "id": 3,
+      "nombre": "Sergio Alegre",
+      "cargo": "Entrenador Asistente"
+    },
+    {
+      "id": 4,
+      "nombre": "Iván Torres",
+      "cargo": "Preparador Físico"
+    },
+    {
+      "id": 5,
+      "nombre": "José Ramón de la Fuente",
+      "cargo": "Entrenador de Porteros"
+    },
+    {
+      "id": 6,
+      "nombre": "Sergio Garcia",
+      "cargo": "Analista"
+    },
+    {
+      "id": 7,
+      "nombre": "Toni Lobo",
+      "cargo": "Analista"
+    },
+    {
+      "id": 8,
+      "nombre": "David Prats",
+      "cargo": "Analista"
+    }
+  ]
+}
