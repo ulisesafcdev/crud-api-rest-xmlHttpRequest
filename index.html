@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>CRUD API REST XML</title>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="text-logo">API REST</span>
+      </div>
+      <div class="nav-links">
+        <a href="#" class="text-normal">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header">
+    <div class="header-container">
+      <h1 class="text-header">Consumiendo datos con cliente REST</h1>
+      <p class="text-light">Lectura, Creación, Actualización y Eliminación de información mediante los métodos
+        HTTP<br>con peticiones AJAX con el objeto XMLHttpRequest</p>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="main-container">
+
+      <h2 class="text-normal">CRUD API REST</h2>
+      <p class="text-light">Create - Read - Update - Delete</p>
+
+      <div class="tabs-container">
+        <input class="radio" type="radio" name="group" value="porteros" id="one">
+        <input class="radio" type="radio" name="group" value="defensas" id="two">
+        <input class="radio" type="radio" name="group" value="centrocampistas" id="three">
+        <input class="radio" type="radio" name="group" value="delanteros" id="four">
+        <input class="radio" type="radio" name="group" value="tecnicos" id="five">
+
+        <div class="tabs">
+          <label id="one-tab" for="one" class="tab">Porteros</label>
+          <label id="two-tab" for="two" class="tab">Defensas</label>
+          <label id="three-tab" for="three" class="tab">Centrocampistas</label>
+          <label id="four-tab" for="four" class="tab">Delanteros</label>
+          <label id="five-tab" for="five" class="tab">Cuerpo Técnico</label>
+        </div>
+
+        <div class="panels">
+
+          <div class="panel" id="one-panel">
+            <p class="text-bold crud-title-porteros">Registrar nuevo portero a la plantilla.</p>            
+            <form class="crud-form-porteros">
+              <input type="hidden" name="id">
+              <div class="form-group">
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="nombre" id="nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="dorsal">Dorsal</label><br>
+                <input type="number" name="dorsal" id="dorsal" required>
+              </div>
+              <div class="form-group">
+                <label for="posicion">Posicion</label><br>
+                <input type="text" name="posicion" id="posicion" required>
+              </div>
+
+              <div class="form-group">
+                <input type="submit" value="Enviar">
+              </div>
+            </form>
+            <hr>
+            <div class="table-container">
+              <table class="crud-table-porteros">
+                <thead>
+                  <tr>
+                    <th class="text-normal">ID</th>
+                    <th class="text-normal">NOMBRE</th>
+                    <th class="text-normal">DORSAL</th>
+                    <th class="text-normal">POSICION</th>
+                    <th></th>                  
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel" id="two-panel">
+            <p class="text-bold crud-title-defensas">Registrar nuevo defensa a la plantilla.</p>
+            <form class="crud-form-defensas">
+              <input type="hidden" name="id">
+              <div class="form-group">
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="nombre" id="nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="dorsal">Dorsal</label><br>
+                <input type="number" name="dorsal" id="dorsal" required>
+              </div>
+              <div class="form-group">
+                <label for="posicion">Posicion</label><br>
+                <input type="text" name="posicion" id="posicion" required>
+              </div>
+
+              <div class="form-group">
+                <input type="submit" value="Enviar">
+              </div>
+            </form>
+            <hr>
+            <div class="table-container">
+              <table class="crud-table-defensas">
+                <thead>
+                  <tr>
+                    <th class="text-normal">ID</th>
+                    <th class="text-normal">NOMBRE</th>
+                    <th class="text-normal">DORSAL</th>
+                    <th class="text-normal">POSICION</th>
+                    <th></th>                  
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel" id="three-panel">
+            <p class="text-bold crud-title-centrocampistas">Registrar nuevo centrocampista a la plantilla.</p>
+            <form class="crud-form-centrocampistas">
+              <input type="hidden" name="id">
+              <div class="form-group">
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="nombre" id="nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="dorsal">Dorsal</label><br>
+                <input type="number" name="dorsal" id="dorsal" required>
+              </div>
+              <div class="form-group">
+                <label for="posicion">Posicion</label><br>
+                <input type="text" name="posicion" id="posicion" required>
+              </div>
+
+              <div class="form-group">
+                <input type="submit" value="Enviar">
+              </div>
+            </form>
+            <hr>
+            <div class="table-container">
+              <table class="crud-table-centrocampistas">
+                <thead>
+                  <tr>
+                    <th class="text-normal">ID</th>
+                    <th class="text-normal">NOMBRE</th>
+                    <th class="text-normal">DORSAL</th>
+                    <th class="text-normal">POSICION</th>
+                    <th></th>                  
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel" id="four-panel">
+            <p class="text-bold crud-title-delanteros">Registrar nuevo delantero a la plantilla.</p>
+            <form class="crud-form-delanteros">
+              <input type="hidden" name="id">
+              <div class="form-group">
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="nombre" id="nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="dorsal">Dorsal</label><br>
+                <input type="number" name="dorsal" id="dorsal" required>
+              </div>
+              <div class="form-group">
+                <label for="posicion">Posicion</label><br>
+                <input type="text" name="posicion" id="posicion" required>
+              </div>
+
+              <div class="form-group">
+                <input type="submit" value="Enviar">
+              </div>
+            </form>
+            <hr>
+            <div class="table-container">
+              <table class="crud-table-delanteros">
+                <thead>
+                  <tr>
+                    <th class="text-normal">ID</th>
+                    <th class="text-normal">NOMBRE</th>
+                    <th class="text-normal">DORSAL</th>
+                    <th class="text-normal">POSICION</th>
+                    <th></th>                  
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel" id="five-panel">
+            <p class="text-bold crud-title-tecnicos">Registrar nuevo integrante del cuerpo técnico.</p>
+            <form class="crud-form-tecnicos">
+              <input type="hidden" name="id">
+              <div class="form-group">
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="nombre" id="nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="cargo">Cargo</label><br>
+                <input type="text" name="cargo" id="cargo" required>
+              </div>
+
+              <div class="form-group">
+                <input type="submit" value="Enviar">
+              </div>
+            </form>
+            <hr>
+            <div class="table-container">
+              <table class="crud-table-tecnicos">
+                <thead>
+                  <tr>
+                    <th class="text-normal">ID</th>
+                    <th class="text-normal">NOMBRE</th>
+                    <th class="text-normal">CARGO</th>
+                    <th></th>                  
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <template id="crud-template-jugadores">
+    <tr>
+      <td class="id"></td>
+      <td class="nombre"></td>
+      <td class="dorsal"></td>
+      <td class="posicion"></td>
+      <td>
+        <button class="edit">📝</button>
+        <button class="delete">🗑️</button>
+      </td>
+    </tr>
+  </template>
+  <template id="crud-template-tecnicos">
+    <tr>
+      <td class="id"></td>
+      <td class="nombre"></td>
+      <td class="cargo"></td>      
+      <td>
+        <button class="edit">📝</button>
+        <button class="delete">🗑️</button>
+      </td>
+    </tr>
+  </template>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
